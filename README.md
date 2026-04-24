@@ -8,7 +8,7 @@
 * **Clean Code & Observability:** Utilized **Lombok** for boilerplate reduction and **SLF4J** for structured, professional logging.
 
 ## 🛠 Tech Stack
-* Java 17 / Spring Boot 3
+* Java 21 / Spring Boot 3
 * Spring Data JPA / PostgreSQL
 * JUnit 5 / Mockito
 * Maven
