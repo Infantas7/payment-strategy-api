@@ -1,6 +1,6 @@
-package strategy;
+package payment.api.strategy;
 
-import enums.TransactionType;
+import payment.api.enums.TransactionType;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;

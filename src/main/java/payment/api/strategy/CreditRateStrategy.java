@@ -1,6 +1,6 @@
-package strategy;
+package payment.api.strategy;
 
-import enums.TransactionType;
+import payment.api.enums.TransactionType;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -13,7 +13,7 @@ public class CreditRateStrategy implements RateCalculatorStrategy{
 
     @Override
     public BigDecimal calculate (BigDecimal value){
-        BigDecimal rate = value.multiply(new BigDecimal("0,05"));
+        BigDecimal rate = value.multiply(new BigDecimal("0.05"));
         return value.subtract(rate) ;
     }
 

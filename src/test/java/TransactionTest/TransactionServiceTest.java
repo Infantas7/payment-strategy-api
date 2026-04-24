@@ -1,8 +1,8 @@
 package TransactionTest;
 
-import dto.TransactionRequestDto;
-import entity.Transaction;
-import enums.TransactionType;
+import payment.api.dto.TransactionRequestDto;
+import payment.api.entity.Transaction;
+import payment.api.enums.TransactionType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,12 +10,12 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import repository.TransactionRepository;
-import service.TransactionService;
-import strategy.BilletRateStrategy;
-import strategy.CreditRateStrategy;
-import strategy.PixRateStrategy;
-import strategy.RateCalculatorStrategy;
+import payment.api.repository.TransactionRepository;
+import payment.api.service.TransactionService;
+import payment.api.strategy.BilletRateStrategy;
+import payment.api.strategy.CreditRateStrategy;
+import payment.api.strategy.PixRateStrategy;
+import payment.api.strategy.RateCalculatorStrategy;
 
 import java.math.BigDecimal;
 import java.util.Arrays;

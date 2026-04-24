@@ -1,6 +1,6 @@
-package dto;
+package payment.api.dto;
 
-import enums.TransactionType;
+import payment.api.enums.TransactionType;
 
 import java.math.BigDecimal;
 
