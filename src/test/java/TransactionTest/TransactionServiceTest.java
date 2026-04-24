@@ -172,9 +172,9 @@ public class TransactionServiceTest {
     @DisplayName("You should continue processing the batch even if an item fails due to a lack of strategy.")
     void mustContinueProcessingLotEvenWithErrorInAnItem() {
 
-        TransactionRequestDto itemValido = new TransactionRequestDto(new BigDecimal("100.00"), TransactionType.PIX);
-        TransactionRequestDto itemInvalido = new TransactionRequestDto(new BigDecimal("50.00"), TransactionType.CREDIT);
-        List<TransactionRequestDto> lote = Arrays.asList(itemValido, itemInvalido);
+        TransactionRequestDto validItem = new TransactionRequestDto(new BigDecimal("100.00"), TransactionType.PIX);
+        TransactionRequestDto invalidItem = new TransactionRequestDto(new BigDecimal("50.00"), TransactionType.CREDIT);
+        List<TransactionRequestDto> lote = Arrays.asList(validItem, invalidItem);
 
 
         lenient().when(pixStrategy.getTransactionType()).thenReturn(TransactionType.PIX);
