@@ -1,14 +1,23 @@
-## 🚀 Key Technical Features
+🎯 Project Purpose:
 
-* **Strategy Design Pattern:** Eliminated complex conditional logic (if/else) by isolating payment rules (PIX, Billet, Credit) into independent, maintainable classes.
-* **Asynchronous Batch Processing:** Implemented `@Async` with custom `ThreadPoolTaskExecutor` to handle large transaction volumes without blocking the main API thread.
-* **Resilience & Error Handling:** * **Global Exception Handler:** Centralized management of API errors for consistent client responses.
-    * **Fault Tolerance:** Batch processing continues even if individual items fail, ensuring high availability.
-* **Unit Testing Excellence:** High coverage using **JUnit 5** and **Mockito**, focusing on behavior verification and edge cases (Happy & Sad Paths).
-* **Clean Code & Observability:** Utilized **Lombok** for boilerplate reduction and **SLF4J** for structured, professional logging.
+This is a personal development project designed to explore the practical applications of the Strategy Design Pattern and industry best practices. The main goal is to demonstrate how to replace complex conditional logic with a scalable, maintainable architecture, while implementing robust asynchronous processing and high-quality automated testing.
 
-## 🛠 Tech Stack
-* Java 17 / Spring Boot 3
-* Spring Data JPA / PostgreSQL
-* JUnit 5 / Mockito
-* Maven
+🛠 Tech Stack:
+
+Java 21 & Spring Boot 
+
+Spring Data JPA & PostgreSQL
+
+JUnit 5 & Mockito (Unit Testing)
+
+Lombok & SLF4J (Clean Code & Logging)
+
+Maven (Dependency Management)
+
+🚀 Core Features:
+
+Strategy Pattern: Decoupled payment logic for PIX, Billet, and Credit cards.
+
+Multithreading: Asynchronous batch processing using @Async.
+
+Global Exception Handling: Centralized error management for a clean API contract.
